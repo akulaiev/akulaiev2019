@@ -15,11 +15,10 @@ public class ArticleManager: NSObject {
     let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Article")
     
     public override init() {
-        let myBundle = Bundle(identifier: "org.cocoapods.akulaiev2019")
-        guard let modelURL = myBundle?.url(forResource: "article", withExtension:"momd") else {
+        let myBundle = Bundle(for: type(of: self))
+        guard let modelURL = myBundle.url(forResource: "article", withExtension:"momd") else {
             fatalError("Error loading model from bundle")
         }
-        
         guard let managedObjModel = NSManagedObjectModel(contentsOf: modelURL) else {
             fatalError("Error initializing managedObjModel from: \(modelURL)")
         }
