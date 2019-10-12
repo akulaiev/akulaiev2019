@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "fa4b009a4804e8c460c5b01b6ee08712"
-build_time: [1570825350, 784470000]
+options: "ae51e952c80dfcc87c4431cf8753cdb3"
+build_time: [1570829789, 627668000]
 inputs:
-  "/Users/DruidKuma/Desktop/SwiftPool/day08/akulaiev2019/akulaiev2019/Classes/Article.swift": [1570818715, 508745146]
-  "/Users/DruidKuma/Desktop/SwiftPool/day08/akulaiev2019/akulaiev2019/Classes/ArticleManager.swift": [1570818715, 509044406]
+  "/Users/DruidKuma/Desktop/akulaiev2019/akulaiev2019/Classes/Article.swift": [1570829751, 969164]
+  "/Users/DruidKuma/Desktop/akulaiev2019/akulaiev2019/Classes/ArticleManager.swift": [1570829751, 1124944]

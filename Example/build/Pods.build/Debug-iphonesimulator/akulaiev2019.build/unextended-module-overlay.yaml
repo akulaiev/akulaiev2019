@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/DruidKuma/Desktop/akulaiev2019/Example/build/Debug-iphonesimulator/akulaiev2019/akulaiev2019.framework/Modules"
+    'name': "/Users/akulaiev/Desktop/akulaiev2019/Example/build/Debug-iphonesimulator/akulaiev2019/akulaiev2019.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/DruidKuma/Desktop/akulaiev2019/Example/build/Pods.build/Debug-iphonesimulator/akulaiev2019.build/unextended-module.modulemap",
+      'external-contents': "/Users/akulaiev/Desktop/akulaiev2019/Example/build/Pods.build/Debug-iphonesimulator/akulaiev2019.build/unextended-module.modulemap",
     }]
   }]
 }

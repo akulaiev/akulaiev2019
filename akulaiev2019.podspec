@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'akulaiev2019'
   s.homepage         = 'https://github.com/akulaiev'
-  s.source           = 'https://github.com/akulaiev/akulaiev2019.git'
+  s.source           = { :git => 'https://github.com/akulaiev/akulaiev2019', :tag => 'v0.1.0' }
   s.version          = '0.1.0'
   s.summary          = 'akulaiev2019 - for learning purposes'
   s.framework        = 'CoreData'
