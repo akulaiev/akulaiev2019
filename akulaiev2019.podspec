@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.author           = { 'akulaiev' => 'akulaiev@student.unit.ua' }
   s.ios.deployment_target = '8.0'
   s.swift_version    = '5.0'
-  s.source_files     = 'akulaiev2019/Classes/**/*.swift'
+  s.source_files     = 'akulaiev2019/Classes/*.swift'
   s.resource_bundles = {
-    'akulaiev2019' => ['akulaiev2019/Classes/**/*.xcdatamodeld']
+    'akulaiev2019' => ['akulaiev2019/Classes/*.xcdatamodeld']
   }
 end
