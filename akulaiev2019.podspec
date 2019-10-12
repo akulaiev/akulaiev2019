@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'akulaiev' => 'akulaiev@student.unit.ua' }
   s.ios.deployment_target = '8.0'
-  s.swift_version = '5.0'
-  s.source_files = 'akulaiev2019/Classes/**/*'
+  s.swift_version    = '5.0'
+  s.source_files     = 'akulaiev2019/Classes/**/*'
+  s.resources        = 'akulaiev2019/Assets/article.xcdatamodeld'
 end
