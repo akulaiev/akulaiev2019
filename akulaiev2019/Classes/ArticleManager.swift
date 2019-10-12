@@ -15,12 +15,18 @@ public class ArticleManager: NSObject {
     let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Article")
     
     public override init() {
-        let myBundle = Bundle(for: type(of: self))
-        guard let modelURL = myBundle.url(forResource: "article", withExtension:"momd") else {
-            fatalError("Error loading model from bundle")
+        var modelUrl: URL!
+        if let bundleURL = Bundle(for: Article.self).url(forResource: "akulaiev2019", withExtension: "bundle") {
+            guard let frameworkBundle = Bundle(url: bundleURL) else {
+                fatalError("Error loading bundle")
+            }
+            modelUrl = frameworkBundle.url(forResource: "article", withExtension: "momd")
         }
-        guard let managedObjModel = NSManagedObjectModel(contentsOf: modelURL) else {
-            fatalError("Error initializing managedObjModel from: \(modelURL)")
+        else {
+            modelUrl = Bundle(for: Article.self).url(forResource: "article", withExtension: "momd")
+        }
+        guard let managedObjModel = NSManagedObjectModel(contentsOf: modelUrl) else {
+            fatalError("Error initializing managedObjModel from: \(modelUrl!)")
         }
         
         let persistentStoreCoord = NSPersistentStoreCoordinator(managedObjectModel: managedObjModel)
